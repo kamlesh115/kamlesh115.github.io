@@ -598,26 +598,26 @@ li:nth-child(7) {
     width: 200px;
     position: absolute;
     z-index: 2;
-    left: 100%;
+    left: 105%;
     bottom: 20%;
 }
 .stylie {
   -moz-animation-name: stylie-transform-keyframes;
-  -moz-animation-duration: 21000ms;
+  -moz-animation-duration: 31000ms;
   -moz-animation-delay: 0ms;
   -moz-animation-fill-mode: forwards;
   -moz-animation-timing-function: linear;
   -moz-animation-iteration-count: infinite;
   -moz-transform-origin: 0 0;
   -webkit-animation-name: stylie-transform-keyframes;
-  -webkit-animation-duration: 21000ms;
+  -webkit-animation-duration: 31000ms;
   -webkit-animation-delay: 0ms;
   -webkit-animation-fill-mode: forwards;
   -webkit-animation-timing-function: linear;
   -webkit-animation-iteration-count: infinite;
   -webkit-transform-origin: 0 0;
   animation-name: stylie-transform-keyframes;
-  animation-duration: 21000ms;
+  animation-duration: 31000ms;
   animation-delay: 0ms;
   animation-fill-mode: forwards;
   animation-timing-function: linear;
