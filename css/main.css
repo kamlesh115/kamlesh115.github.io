@@ -599,7 +599,7 @@ li:nth-child(7) {
     position: absolute;
     z-index: 2;
     left: 100%;
-    bottom: 15%;
+    bottom: 20%;
 }
 .stylie {
   -moz-animation-name: stylie-transform-keyframes;
@@ -668,3 +668,7 @@ li:nth-child(7) {
 }html::after { content: url(https://ga-beacon.appspot.com/UA-42910121-1/stylie?pixel); position: absolute; left: -999em; }
 
 /*Couple Code ends here*/
+
+.header-container {
+    overflow-x:hidden;
+}
