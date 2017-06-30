@@ -670,5 +670,5 @@ li:nth-child(7) {
 /*Couple Code ends here*/
 
 .header-container {
-    overflow-x:hidden;
+    overflow:hidden;
 }
