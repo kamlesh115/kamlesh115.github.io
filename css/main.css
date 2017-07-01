@@ -584,8 +584,8 @@ li:nth-child(7) {
 /*Moon CSS code ends here*/
 /*Couple Code starts here*/
 .couple{
-    height: 200px;
-    width: 200px;
+    height: 280px;
+    width: 250px;
     position: absolute;
     z-index: 2;
     left: 105%;
