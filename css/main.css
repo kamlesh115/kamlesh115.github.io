@@ -676,7 +676,7 @@ li:nth-child(7) {
 }
 .storyContent img {
    height: 150px; 
-   width: 170px;
+   width: 210px;
 }
 .imagesBorderStyle {
   padding: 15px;
@@ -690,6 +690,19 @@ li:nth-child(7) {
   border-bottom-color:#7cbfcf;
   border-top-width:8px;
   border-bottom-width:8px;
+}
+.imagesBorderStyle:hover
+{
+    box-shadow: 0px 0px 150px #000000;
+    z-index: 2;
+    -webkit-transition: all 200ms ease-in;
+    -webkit-transform: scale(1.5);
+    -ms-transition: all 200ms ease-in;
+    -ms-transform: scale(1.5);   
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: scale(1.5);
+    transition: all 200ms ease-in;
+    transform: scale(1.5);
 }
 .main-container{
   overflow-x: hidden;
