@@ -112,6 +112,9 @@ h1, h2, h3, h4, h5, h6, figure {
   -o-transition: 0.2s;
   transition: 0.2s;
 }
+.gtco-nav #gtco-logo em img {
+  width: 150%;
+}
 .gtco-nav #gtco-logo a {
   padding: 0px 10px;
   color: #fff;
@@ -752,6 +755,10 @@ h1, h2, h3, h4, h5, h6, figure {
   font-size: 23px;
   content: "\e9f4";
 }
+.gtco-contact-info ul li.mobile:before {
+  font-size: 23px;
+  content: "\e9e4";
+}
 .gtco-contact-info ul li.email:before {
   font-size: 23px;
   content: "\e9da";
@@ -1300,3 +1307,8 @@ form label {
 }
 
 /*# sourceMappingURL=style.css.map */
+
+#map {
+        height: 500px;
+        width: 100%;
+      }

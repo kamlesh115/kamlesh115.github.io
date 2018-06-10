@@ -63,8 +63,9 @@
 			<div class="row">
 				<div class="col-sm-3 col-xs-12">
 					<div id="gtco-logo">
-						<a href="index.html">Speedo<em>Freight</em></a>
-						<a class="a1" href="index.html"><em>International Freight Forwarder</em></a>
+						<a href="index.html"><em><img src="images\speedo freight.png"></em></a>
+						<!-- <a href="index.html">Speedo<em>Freight</em></a>
+						<a class="a1" href="index.html"><em>International Freight Forwarder</em></a> -->
 					</div>
 				</div>
 				<div class="col-xs-9 text-right menu-1 main-nav">
@@ -81,7 +82,7 @@
 		</div>
 	</nav>
 
-	<section id="gtco-hero" class="gtco-cover" style="background-image: url(images/11.jpg);"  data-section="home"  data-stellar-background-ratio="0.5">
+	<section id="gtco-hero" class="gtco-cover" style="background-image: url(images/111.jpg);"  data-section="home"  data-stellar-background-ratio="0.5">
 		<div class="overlay"></div>
 		<div class="container">
 			<div class="row">
@@ -89,7 +90,7 @@
 					<div class="display-t">
 						<div class="display-tc">
 							<h1 class="animate-box" data-animate-effect="fadeIn">The Greatest Firm You Can Trust</h1>
-							<p class="gtco-video-link animate-box" data-animate-effect="fadeIn"><a href="https://www.youtube.com/watch?v=iys1KtIeNuk" class="popup-vimeo"><i class="icon-controller-play"></i></a></p>
+							<!-- <p class="gtco-video-link animate-box" data-animate-effect="fadeIn"><a href="https://www.youtube.com/watch?v=iys1KtIeNuk" class="popup-vimeo"><i class="icon-controller-play"></i></a></p> -->
 						</div>
 					</div>
 				</div>
@@ -236,6 +237,7 @@
 					<!-- <p class="subtle-text animate-box" data-animate-effect="fadeIn">Our Network</p> -->
 				</div>
 			</div>
+
 			<!-- <div class="row team-item gtco-team-reverse">
 				<div class="col-md-6 col-md-push-7 animate-box" data-animate-effect="fadeInRight">
 					<div class="img-shadow">
@@ -262,7 +264,66 @@
 				</div>
 			</div> -->
 			<div class="row team-item gtco-team-reverse">
-					<table class="table table-striped">
+				<div id="map"></div>
+    <script>
+
+      function initMap() {
+
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 3,
+          center: {lat: -28.024, lng: 140.887}
+        });
+
+        // Create an array of alphabetical characters used to label the markers.
+        var labels = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+
+        // Add some markers to the map.
+        // Note: The code uses the JavaScript Array.prototype.map() method to
+        // create an array of markers based on a given "locations" array.
+        // The map() method here has nothing to do with the Google Maps API.
+        var markers = locations.map(function(location, i) {
+          return new google.maps.Marker({
+            position: location,
+            label: labels[i % labels.length]
+          });
+        });
+
+        // Add a marker clusterer to manage the markers.
+        var markerCluster = new MarkerClusterer(map, markers,
+            {imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m'});
+      }
+      var locations = [
+        {lat: 23.424076, lng: 53.847818},
+        {lat: -33.718234, lng: 150.363181},
+        {lat: -33.727111, lng: 150.371124},
+        {lat: -33.848588, lng: 151.209834},
+        {lat: -33.851702, lng: 151.216968},
+        {lat: -34.671264, lng: 150.863657},
+        {lat: -35.304724, lng: 148.662905},
+        {lat: -36.817685, lng: 175.699196},
+        {lat: -36.828611, lng: 175.790222},
+        {lat: -37.750000, lng: 145.116667},
+        {lat: -37.759859, lng: 145.128708},
+        {lat: -37.765015, lng: 145.133858},
+        {lat: -37.770104, lng: 145.143299},
+        {lat: -37.773700, lng: 145.145187},
+        {lat: -37.774785, lng: 145.137978},
+        {lat: -37.819616, lng: 144.968119},
+        {lat: -38.330766, lng: 144.695692},
+        {lat: -39.927193, lng: 175.053218},
+        {lat: -41.330162, lng: 174.865694},
+        {lat: -42.734358, lng: 147.439506},
+        {lat: -42.734358, lng: 147.501315},
+        {lat: -42.735258, lng: 147.438000},
+        {lat: -43.999792, lng: 170.463352}
+      ]
+    </script>
+    <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js">
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB2bXKNDezDf6YNVc-SauobynNHPo4RJb8&callback=initMap">
+    </script>
+					<!-- <table class="table table-striped">
 						<tbody>
 							<tr> <td> U.A.E. </td> <td> BELGIUM </td> <td> ARE </td> <td> ANGOLA </td> </tr> 
 							<tr> <td> BANGLADESH </td> <td> SWITZERLAND </td> <td> BQN </td> <td> IVORY COAST </td> </tr> 
@@ -320,7 +381,7 @@
 							<tr> <td> UKRAINE </td> <td> SLOVENIA </td> <td> VIRGIN ISLANDS </td> <td> BAHRAIN </td> </tr>
 							<tr> <td> UZBEKISTAN </td> <td> KUWAIT </td> <td> </td> <td> </td> </tr>
 						</tbody>
-					</table>
+					</table> -->
 				<!-- === SERVICE ITEM === -->
 				</div>
 
@@ -362,6 +423,7 @@
 						<ul>
 							<li class="address">Akshay Heritage, Flat no. 204, Lane no. 06, Vidyanagar, Airport Road, Pune- 411032, Maharashtra, India.</li>
 							<li class="phone"><a href="tel://912026690050">+ 91 2026690050</a></li>
+							<li class="mobile"><a href="tel://919665768176">+ 91 9665768176</a></li>
 							<li class="email"><a href="mailto:kamlesh@speedofreight.com">kamlesh@speedofreight.com</a></li>
 							<li class="url"><a href="#">http://speedofreight.com</a></li>
 						</ul>
