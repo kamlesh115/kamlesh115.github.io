@@ -425,7 +425,7 @@ h1, h2, h3, h4, h5, h6, figure {
   top: 0;
   left: 0;
   right: 0;
-  background: rgba(35, 35, 35, 0.5);
+  /*background: rgba(35, 35, 35, 0.5);*/
 }
 .gtco-cover > .container {
   position: relative;
@@ -618,7 +618,7 @@ h1, h2, h3, h4, h5, h6, figure {
   bottom: -1em;
   left: 0;
   text-transform: uppercase;
-  font-size: 208px;
+  font-size: 1050%;
   color: #F8F8F8;
   font-weight: 900;
   z-index: -1;
@@ -746,6 +746,14 @@ h1, h2, h3, h4, h5, h6, figure {
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+.gtco-contact-info ul li.skype:before {
+  font-size: 30px;
+  content: "\ea55";
+}
+.gtco-contact-info ul li.user:before {
+  font-size: 30px;
+  content: "\ea36";
 }
 .gtco-contact-info ul li.address:before {
   font-size: 30px;
