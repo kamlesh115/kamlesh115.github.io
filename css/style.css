@@ -130,6 +130,9 @@ h1, h2, h3, h4, h5, h6, figure {
   .gtco-nav .menu-1, .gtco-nav .menu-2 {
     display: none;
   }
+  .gtco-nav #gtco-logo em img {
+  width: 80%;
+  }
 }
 .gtco-nav ul {
   padding: 0;
@@ -319,11 +322,15 @@ h1, h2, h3, h4, h5, h6, figure {
   #gtco-hero .text-left {
     text-align: center !important;
   }
+
 }
 @media screen and (max-width: 480px) {
   #gtco-hero .btn {
     display: block;
     width: 100%;
+  }
+  #gtco-contact .heading .subtle-text {
+  font-size: 100%;
   }
 }
 
@@ -438,14 +445,14 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 .gtco-cover .display-t,
 .gtco-cover .display-tc {
-  height: 900px;
+  height: 700px;
   display: table;
   width: 100%;
 }
 @media screen and (max-width: 768px) {
   .gtco-cover .display-t,
   .gtco-cover .display-tc {
-    height: 600px;
+    height: 450px;
   }
 }
 .gtco-cover.gtco-cover-sm {
@@ -655,6 +662,9 @@ h1, h2, h3, h4, h5, h6, figure {
   .heading h1 {
     font-size: 26px;
   }
+#gtco-contact .heading .subtle-text {
+  font-size: 250%;
+  }
 }
 .heading .sub {
   position: relative;
@@ -805,6 +815,11 @@ form label {
     font-size: 34px;
     line-height: 1.2;
     margin-bottom: 10px;
+    /*width: 100% !important;*/
+  }
+  #gtco-header .display-tc h1 img,
+  .gtco-cover .display-tc h1:last-child img{
+    width: 100%;
   }
 }
 #gtco-header .display-tc h2,
