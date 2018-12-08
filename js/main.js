@@ -1,6 +1,17 @@
-;(function () {
-	
+	var items="";
+
+	;(function () {
+
 	'use strict';
+
+
+	function replaceAll(str,mapObj){
+	var re = new RegExp(Object.keys(mapObj).join("|"),"gi");
+
+	return str.replace(re, function(matched){
+	    return mapObj[matched.toLowerCase()];
+	});
+	}
 
 	var isMobile = {
 		Android: function() {
@@ -37,15 +48,15 @@
 	    var container = $("#gtco-offcanvas, .js-gtco-nav-toggle");
 	    if (!container.is(e.target) && container.has(e.target).length === 0) {
 	    	if ( $('body').hasClass('offcanvas') ) {
-    			$('body').removeClass('offcanvas');
-    			$('.js-gtco-nav-toggle').removeClass('active');
+				$('body').removeClass('offcanvas');
+				$('.js-gtco-nav-toggle').removeClass('active');
 	    	}
 	    }
 		});
 
 	};
 
-	
+
 
 	var header = function() {
 		$(window).scroll(function(){
@@ -56,7 +67,7 @@
 				$('.gtco-nav').removeClass('scrolled');
 			}
 		});
-   
+
 	};
 
 	var navigation = function() {
@@ -116,8 +127,8 @@
 
 			if ( $('body').hasClass('offcanvas') ) {
 
-    			$('body').removeClass('offcanvas');
-    			$('.js-gtco-nav-toggle').removeClass('active');
+				$('body').removeClass('offcanvas');
+				$('.js-gtco-nav-toggle').removeClass('active');
 				
 	    	}
 		});
@@ -305,7 +316,7 @@
 			}
 
 		});
-	
+
 	};
 
 
@@ -314,10 +325,10 @@
 		$(".gtco-loader").fadeOut("slow");
 	};
 
-	
 
 
-	
+
+
 	$(function(){
 		parallax();
 		mobileMenuOutsideClick();
@@ -333,4 +344,4 @@
 	});
 
 
-}());
+	}());
